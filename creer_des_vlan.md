@@ -1,5 +1,10 @@
-# <ins>**Créer un VLAN**<ins>
+# <ins>**Créer des VLAN**<ins>
 Sur Cisco Packet Tracer, on installe 4 PC reliés à 1 switch. On souhaite créer "VLAN 10", qui comprendra PC 0 et PC1, et VLAN 20, qui comprendra PC2 et PC3.
+  
+  
+![Capture](https://user-images.githubusercontent.com/105868197/171627772-332a75e8-dc9e-4b5a-beda-ace800546cd8.PNG)
+
+
 
 **Etape 1 : créer les VLAN**
 ```
@@ -14,7 +19,7 @@ name Education
 end
 ```
 
-**Etape 2 : lui affecter un port**
+**Etape 2 : Leur affecter des ports **
   
 Si l'on laisse le curseur de la souris sur le switch, on se rend compte que le VLAN 1 a été affecté à tous les ports par défaut. 
 PC0 et PC1 sont branchés aux ports FastEthernet 0/1 et FastEthernet0/2, donc on affecte ces ports au VLAN 10 : 
