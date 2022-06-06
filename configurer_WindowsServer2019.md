@@ -23,7 +23,7 @@ Sysprep nous permettra de créer une image que l'on pourra par la suite déploye
 Il faut sélectionner "Généraliser" pour que l'image créée supprime les informations spécifiques à notre VM, et pour que l'image soit ainsi déployable sur plusieurs machines différentes.
 
 
-RESEAU
+RESEAU : CHANGER L'IP EN MODE GRAPHIQUE
 
 On doit configurer nos machines selon le schéma suivant :
 
@@ -49,6 +49,8 @@ Dans la fenêtre qui s'ouvre, on peut enfin renseigner une adresse IP, un masque
 
 Il ne faut pas oublier de cocher le bouton "Valider les paramètres en quittant", puis "Ok".
 
+On peut vérifier avec "ipconfig" en ligne de commande.
+
 
 ROLES ET FONCTIONNALITES
 
@@ -67,6 +69,24 @@ Après avoir cliqué sur "Suivant", on nous propose cette fois de sélectionner 
 ![image](https://user-images.githubusercontent.com/105868197/172124324-63f8a9c0-a929-4277-9241-0a29af1f88e6.png)
 
 L'assistant propose ensuite de sélectionner des "services de rôle". On clique ensuite sur "Installer".
+
+
+VERIFICATIONS
+
+Pour vérifier la bonne installation d'IIS, on ouvre un navigateur web et on y tape "http://localhost".
+Une image d'IIS doit apparaître.
+
+AUTORISER L'UTILISATION DU BUREAU A DISTANCE
+
+On souhaite pouvoir utiliser le bureau à distance sur nos machines W10-CLI1 et W19-SRV1.
+Dans W19-SRV1, on se rend dans Panneau de configuration > Système et Sécurité > Système, puis on sélectionne "Paramètres système avancés". 
+Dans la fenêtre qui s'ouvre, on sélectionne "Autoriser les connexions distantes à cet ordinateur" : 
+
+![image](https://user-images.githubusercontent.com/105868197/172127107-bf66bca7-dd72-4a72-a85a-c28514f05cf9.png)
+
+VERIFICATIONS
+
+On utilise pour cela l'outil graphique "Bureau à distance" ou l'outil en ligne de commande "mstcs"
 
 
 
