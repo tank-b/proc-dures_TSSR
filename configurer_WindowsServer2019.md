@@ -44,10 +44,29 @@ On fait ensuite un clic droit sur la connexion qui apparaît, puis "Propriétés
 
 
 Dans la fenêtre qui s'ouvre, on peut enfin renseigner une adresse IP, un masque de sous-réseau, une passerelle par défaut, et des adresses de serveur DNS :
+
 ![image](https://user-images.githubusercontent.com/105868197/172120850-07322b65-7def-44f4-bd33-987511f4e897.png)
 
 Il ne faut pas oublier de cocher le bouton "Valider les paramètres en quittant", puis "Ok".
 
+
+ROLES ET FONCTIONNALITES
+
+INSTALLER IIS (INTERNET INFORMATION SERVICES)
+
+Dans le Gestionnaire de serveur, cliquer sur "Gérer" puis "Ajouter des rôles et fonctionnalités" : 
+
+![image](https://user-images.githubusercontent.com/105868197/172123455-90ac43e0-ed33-47ff-97b1-2dad46df0c3a.png)
+
+Ensuite, sélectionner "Installation basée sur un rôle ou une fonctionnalité", puis "Suivant". Il faut ensuite sélectionner le serveur sur lequel on souhaite installer IIS. Dans la liste qui apparaît, on sélectionne le rôle "Serveur Web (IIS)".
+
+![image](https://user-images.githubusercontent.com/105868197/172123968-220d4ba1-67f7-463c-8c08-e509719d05d4.png)
+
+Après avoir cliqué sur "Suivant", on nous propose cette fois de sélectionner des rôles. On choisit alors (dans le cadre du TP) l'Outil de sauvegarde windows server.
+
+![image](https://user-images.githubusercontent.com/105868197/172124324-63f8a9c0-a929-4277-9241-0a29af1f88e6.png)
+
+L'assistant propose ensuite de sélectionner des "services de rôle". On clique ensuite sur "Installer".
 
 
 
