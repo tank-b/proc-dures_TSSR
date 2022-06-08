@@ -2,7 +2,7 @@ Pour réaliser cette mise en place d'Active Directory, on utilise une VM avec Wi
 
 **CREATION D'UN CONTEXTE DE DOMAINE ACTIVE DIRECTORY**
 
-**AJOUT DU ROLE ACTIVE DIRECTORY **
+***AJOUT DU ROLE ACTIVE DIRECTORY ***
 
 Dans Gestionnaire de serveur, cliquer sur "Gérer" puis "Ajouter des rôles et fonctionnalités".
 Cliquer sur "suivant". Sur la fenêtre "type d'installation", cliquer sur suivant. Sur la fenêtre "Sélection du serveur", cliquer encore sur "Suivant".
@@ -41,4 +41,18 @@ Dans la fenêtre "Chemins d'accès", cliquer sur "Suivant".
 Dans la fenêtre "Examiner les options", cliquer sur "Suivant".
 Enfin, cliquer sur "Installer".
 
+**AJOUTER UN SERVEUR A UN DOMAINE EXISTANT**
+
+On ouvre notre VM W19-SRV1. Aller dans Panneau de configuration > Système et sécurité > Système puis "Modifier les paramètres".
+Dans l'onglet "Nom de l'ordinateur, cliquer sur le bouton "Modifier".
+Cette fenêtre apparait : il faut alors rajouter le nom de domaine puis cliquer sur "ok".
+
+![image](https://user-images.githubusercontent.com/105868197/172672497-c706b43f-3b16-47d9-aa7e-572b1a7f208d.png)
+
+Il faut enfin redémarrer l'ordinateur.
+
+/!\ Si l'on utilise une VM clonée, l'ajout au domaine ne sera pas possible si le SID est similaire au contrôleur de domaine. Il faut donc exécuter sysprep sur l'ordinateur.
+/!\Il faut également prendre soin d'ajouter dans l'adressage IP de SRV1 l'adresse de notre nouveau serveur DNS.
+
+On peut visualiser les ordinateurs membres du domaines dans le Tableau de Bord > Outils > Centre d'administration Active Directory. On clique sur notre domaine puis on sélectionne "Computers".
 
