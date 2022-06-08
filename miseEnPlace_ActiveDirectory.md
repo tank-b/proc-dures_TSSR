@@ -23,7 +23,7 @@ Puis cliquer sur le bouton "Oui" de la fenêtre contextuelle qui apparaît.
 
 Cliquer enfin sur le bouton "Installer", puis "FERMER".
 
-**CREATION D'UNE FORET **
+**CREATION D'UNE FORET ET D'UN CONTROLEUR DE DOMAINE **
 
 Cliquer sur le drapeau qui vient d'apparaître sur le Tableau de bord.
 
@@ -32,5 +32,13 @@ Cliquer sur le drapeau qui vient d'apparaître sur le Tableau de bord.
 Cliquer ensuite sur "Promouvoir ce serveur en contrôleur de domaine".
 
 ![image](https://user-images.githubusercontent.com/105868197/172638102-f9a8541a-45ec-4ed8-8ddd-11f7885a1636.png)
+
+La fenêtre "Configuration de déploiement" s'ouvre. Cocher le bouton "ajouter une nouvelle forêt" et nommer le nom du domaine racine, puis cliquer sur "Suivant".
+Renseigner un mot de passe de restauration des services d'annuaires, puis cliquer sur "Suivant". 
+Dans la fenêtre "Options DNS", cliquer sur "Suivant".
+Dans la fenêtre "Options supplémentaires", cliquer sur "Suivant".
+Dans la fenêtre "Chemins d'accès", cliquer sur "Suivant".
+Dans la fenêtre "Examiner les options", cliquer sur "Suivant".
+Enfin, cliquer sur "Installer".
 
 
